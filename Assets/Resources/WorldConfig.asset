@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dec194019fd03c4cb4a02dd906639db, type: 3}
+  m_Name: WorldConfig
+  m_EditorClassIdentifier: 
+  PlatformSpawnerPrefab: {fileID: 8879648896726908756, guid: ff7947e2eb4c4b64a94a4f13403bd925,
+    type: 3}
+  PlatformPrefabs:
+  - platformPrefab: {fileID: 167736524692739848, guid: fdd85b780bf57554e856a027ad51d905,
+      type: 3}
+    spawnChance: 50
+  - platformPrefab: {fileID: 6454870341958095469, guid: c9a34be06d0a21c46915ef3e690dd849,
+      type: 3}
+    spawnChance: 20
+  - platformPrefab: {fileID: 1515709902200120138, guid: 59e1acd617d6f6d4daf0abd3f901c451,
+      type: 3}
+    spawnChance: 20
+  - platformPrefab: {fileID: 8329874688027407094, guid: 5f27786fb39f1be42b3c15079dde2595,
+      type: 3}
+    spawnChance: 89
+  PlatformMinHorizontalDistance: 3
+  PlatformMaxHorizontalDistance: 6
+  PlatformMinVerticalDistance: -3.5
+  PlatformMaxVerticalDistance: 0
+  PlatformMinLength: 0
+  PlatformMaxLength: 0
+  GreenPlatformJumpMultiplier: 1.2
+  RedPlatformJumpMultiplier: 5
+  BlackPlatformEffectTime: 1.2

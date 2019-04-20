@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eea0d11032993324b8a6aeb45a9b011d, type: 3}
+  m_Name: PlayerConfig
+  m_EditorClassIdentifier: 
+  PlayerPrefab: {fileID: 6981587341344384143, guid: 13cc3f93c5e0a3943badd8e1eaf6ef3c,
+    type: 3}
+  JumpKey: 32
+  InitialSpeed: 5
+  SpeedPerSecond: 0.5
+  JumpForce: 17
+  JumpTime: 0.35
+  GravityMultiplier: 4
