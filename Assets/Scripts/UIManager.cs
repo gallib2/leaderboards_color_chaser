@@ -24,6 +24,8 @@ public class UIManager : MonoBehaviour
     private bool _gameStarted = false, _gameOver = false;
     private string _playerName;
 
+    private bool _insertScoreToLeaderBoards = false;
+
 
     //We reset the playerprefs so when the user restarts the game it wont save it
     //Maybe this should move to GM class?
@@ -37,14 +39,16 @@ public class UIManager : MonoBehaviour
         _startGamePanel.SetActive(true);
     }
 
+
     //Called from GameManager cs
     public void GameOver()
     {
         _gameStarted = false;
         _gameOver = true;
+        _insertScoreToLeaderBoards = false;
         _gameOverPanel.SetActive(true);
 
-         float score = _timer;
+        float score = _timer;
 
         if (score > PlayerPrefs.GetFloat("HighScore", 0))
         {
@@ -60,6 +64,13 @@ public class UIManager : MonoBehaviour
     private void Update()
     {
         DisplayTime();
+
+        if (_gameOver == true && _insertScoreToLeaderBoards == false)
+        {
+            int score = (int)_timer;
+            Highscores.AddNewHighScore(_playerName, score);
+            _insertScoreToLeaderBoards = true;
+        }
     }
 
     private void DisplayTime()
